@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "YO.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *APIKey = @"749fa7b6e1d233630efcf8c063e8f542e0ae2176";
+    [YO startWithAPIKey:APIKey];
+    
     return YES;
 }
 
